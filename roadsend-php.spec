@@ -1,8 +1,10 @@
+# TODO
+# - package files
 Summary:	The Roadsend PCC Compiler for PHP
 Summary(pl.UTF-8):	Kompilator Roadsend PCC dla PHP
 Name:		roadsend-php
 Version:	2.9.2
-Release:	1
+Release:	0.1
 License:	GPL / LGPL
 Group:		Development/Languages
 Source0:	http://code.roadsend.com/snaps/%{name}-%{version}.tar.bz2
@@ -50,11 +52,11 @@ Apache.
 	--with-gtk2
 %{__make} -j1
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-
-%clean
-rm -rf $RPM_BUILD_ROOT
