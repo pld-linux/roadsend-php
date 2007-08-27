@@ -1,0 +1,11 @@
+--- roadsend-php-2.9.2/acinclude.m4~	2007-08-26 17:01:00.000000000 +0200
++++ roadsend-php-2.9.2/acinclude.m4	2007-08-26 16:53:06.000000000 +0200
+@@ -198,7 +198,7 @@
+             AC_SUBST(SQLITE3_CFLAGS)
+             AC_SUBST(SQLITE3_LDFLAGS)
+             AC_SUBST(SQLITE3_VERSION)
+-            AC_DEFINE(HAVE_SQLITE3)
++            AC_DEFINE_UNQUOTED(HAVE_SQLITE3, 1, [Define to 1 if you have SQLITE3 installed])
+         fi
+     fi
+ ])
