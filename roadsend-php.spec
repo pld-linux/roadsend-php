@@ -9,7 +9,7 @@ Source0:	http://code.roadsend.com/snaps/%{name}-%{version}.tar.bz2
 # Source0-md5:	c7492681aa6f5f0fd7b7fd5d44e6996d
 Patch0:		%{name}-ac.patch
 URL:		http://www.roadsend.com/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	bigloo >= 2.9a
 BuildRequires:	curl-devel >= 7.15.0
