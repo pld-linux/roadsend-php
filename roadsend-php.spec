@@ -52,10 +52,12 @@ Apache.
 	--with-gtk2
 %{__make} -j1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %install
+rm -rf $RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
