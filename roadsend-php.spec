@@ -14,16 +14,15 @@ URL:		http://www.roadsend.com/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	bigloo >= 2.9a
-BuildRequires:	curl-devel >= 7.15.0
+BuildRequires:	curl-devel >= 7.15.1
 BuildRequires:	fcgi-devel >= 2.4.0
-BuildRequires:	gtk+2-devel
-BuildRequires:	libglade2-devel
-BuildRequires:	libidn-devel
-BuildRequires:	libssh2-devel
+BuildRequires:	gtk+2-devel >= 1:2.0
+BuildRequires:	libglade2-devel >= 1:2.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.0
 BuildRequires:	mysql-devel
 BuildRequires:	pcre-devel >= 6.3
+BuildRequires:	pkgconfig
 BuildRequires:	sqlite3-devel >= 3.3.0
 BuildRequires:	unixODBC-devel >= 2.2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,7 +35,7 @@ PCC can be used with or without the Apache webserver.
 %description -l pl.UTF-8
 PCC to kompilator Roadsend dla PHP. Kompiluje on kod PHP w wydajne,
 samodzielne pliki wykonywalne oraz biblioteki. Kod skompilowany za
-pomoc± PHP mo¿e, ale nie musi byæOF u¿yty razem z serwerem HTTP
+pomocą PHP może, ale nie musi być użyty razem z serwerem HTTP
 Apache.
 
 %prep
